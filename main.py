@@ -30,7 +30,7 @@ while True:
 
 
 print("Você deseja fazer uma Soma ou Subtração?")
-print("\n1 - Somar \n2 - Subtrair\n3 - Potência\n 4 - Resto da divisão")
+print("\n1 - Somar \n2 - Subtrair\n3 - Potência\n4 - Resto da divisão")
 while True:
   try:
       resp = int(input("Digite qual vc deseja: "))
@@ -71,14 +71,13 @@ elif resp == 3:
   while True:
     try:
         a = int(input("Digite o 1° valor: "))
-        b = int(input("Digite o 2° valor: "))
         break
     except ValueError:
       print("Valor Invalido")
-  pot = Renato.pot(a, b)
-  print(pot)
+  poten = Renato.pot(a)
+  print(poten)
 
-  elif resp == 4:
+elif resp == 4:
   print("Resto da divisão")
   while True:
     try:
