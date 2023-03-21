@@ -1,5 +1,6 @@
 import Murilo
 import Juan
+import Renato
 
 while True:
   try:
@@ -29,11 +30,11 @@ while True:
 
 
 print("Você deseja fazer uma Soma ou Subtração?")
-print("\n1 - Somar \n2 - Subtrair\n")
+print("\n1 - Somar \n2 - Subtrair\n3 - Potência\n 4 - Resto da divisão")
 while True:
   try:
       resp = int(input("Digite qual vc deseja: "))
-      if resp < 3 and resp > 0:
+      if resp < 5 and resp > 0:
         break
   except ValueError:
     print("Valor Invalido!")
@@ -64,4 +65,31 @@ elif resp == 2:
       print("Valor Invalido")
   sub = Murilo.sub(a, b)
   print(sub)
+
+elif resp == 3:
+  print("Potência")
+  while True:
+    try:
+        a = int(input("Digite o 1° valor: "))
+        b = int(input("Digite o 2° valor: "))
+        break
+    except ValueError:
+      print("Valor Invalido")
+  pot = Renato.pot(a, b)
+  print(pot)
+
+  elif resp == 4:
+  print("Resto da divisão")
+  while True:
+    try:
+        a = int(input("Digite o 1° valor: "))
+        b = int(input("Digite o 2° valor: "))
+        break
+    except ValueError:
+      print("Valor Invalido")
+  resto = Renato.resto(a, b)
+  print(resto)
+
+
+
 
